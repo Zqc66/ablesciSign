@@ -75,7 +75,7 @@ if "QYWX_KEY" in os.environ:
     if len(os.environ["QYWX_KEY"]) > 1:
         QYWX_KEY = os.environ["QYWX_KEY"]
         # print("已获取并使用Env环境 QYWX_AM")
-print(SCKEY)
+
 if BARK:
     notify_mode.append('bark')
     # print("BARK 推送打开")
