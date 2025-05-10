@@ -29,7 +29,7 @@ TG_USER_ID = ''  # tg机器人的TG_USER_ID; secrets可填 1434078534 
 TG_API_HOST = ''  # tg 代理api
 TG_PROXY_IP = ''  # tg机器人的TG_PROXY_IP; secrets可填
 TG_PROXY_PORT = ''  # tg机器人的TG_PROXY_PORT; secrets可填
-DD_BOT_ACCESS_TOKEN = ''  # 钉钉机器人的DD_BOT_ACCESS_TOKEN; secrets可填
+DD_BOT_ACCESS_TOKEN = ''  # 钉钉机器人的DD_BOT_ACCESS_TOKEN; secrets可填  
 DD_BOT_SECRET = ''  # 钉钉机器人的DD_BOT_SECRET; secrets可填
 QQ_SKEY = ''  # qq机器人的QQ_SKEY; secrets可填
 QQ_MODE = ''  # qq机器人的QQ_MODE; secrets可填
@@ -77,7 +77,7 @@ if "QYWX_KEY" in os.environ:
         # print("已获取并使用Env环境 QYWX_AM")
 
 if BARK:
-    notify_mode.append('bark')  
+    notify_mode.append('bark')
     # print("BARK 推送打开")
 if BARK_PUSH:
     notify_mode.append('bark')
