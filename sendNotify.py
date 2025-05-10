@@ -108,7 +108,7 @@ if QYWX_AM:
 if QYWX_KEY:
     notify_mode.append('wecom_key')
     # print("企业微信机器人 推送打开")
-print(notify_mode)
+
 
 def message(str_msg):
     global message_info
@@ -407,10 +407,8 @@ def send(title, content):
                 print('未启用 bark')
             continue
         if i == 'sc_key':
-            print('1')
             if SCKEY:
                 serverJ(title=title, content=content)
-                print('2')
             else:
                 print('未启用 Server酱')
             continue
