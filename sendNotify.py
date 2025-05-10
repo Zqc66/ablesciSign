@@ -77,7 +77,7 @@ if "QYWX_KEY" in os.environ:
         # print("已获取并使用Env环境 QYWX_AM")
 
 if BARK:
-    notify_mode.append('bark')
+    notify_mode.append('bark')  
     # print("BARK 推送打开")
 if BARK_PUSH:
     notify_mode.append('bark')
@@ -108,7 +108,7 @@ if QYWX_AM:
 if QYWX_KEY:
     notify_mode.append('wecom_key')
     # print("企业微信机器人 推送打开")
-
+print(notify_mode)
 
 def message(str_msg):
     global message_info
