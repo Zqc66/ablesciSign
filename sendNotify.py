@@ -52,14 +52,14 @@ if "XZKEY" in os.environ and os.environ["XZKEY"]:
 if "TG_BOT_TOKEN" in os.environ and os.environ["TG_BOT_TOKEN"] and "TG_USER_ID" in os.environ and os.environ["TG_USER_ID"]:
     TG_BOT_TOKEN = os.environ["TG_BOT_TOKEN"]
     TG_USER_ID = os.environ["TG_USER_ID"]
-if "TG_API_HOST" in os.environ and os.environ["TG_API_HOST"]:    
+if "TG_API_HOST" in os.environ and os.environ["TG_API_HOST"]:
     TG_API_HOST = os.environ["TG_API_HOST"]
 if "DD_BOT_ACCESS_TOKEN" in os.environ and os.environ["DD_BOT_ACCESS_TOKEN"] and "DD_BOT_SECRET" in os.environ and \
         os.environ["DD_BOT_SECRET"]:
     DD_BOT_ACCESS_TOKEN = os.environ["DD_BOT_ACCESS_TOKEN"]
     DD_BOT_SECRET = os.environ["DD_BOT_SECRET"]
 if "QQ_SKEY" in os.environ and os.environ["QQ_SKEY"] and "QQ_MODE" in os.environ and os.environ["QQ_MODE"]:
-    QQ_SKEY = os.environ["QQ_SKEY"]  
+    QQ_SKEY = os.environ["QQ_SKEY"]
     QQ_MODE = os.environ["QQ_MODE"]
 # 获取pushplus+ PUSH_PLUS_TOKEN
 if "PUSH_PLUS_TOKEN" in os.environ:
@@ -75,14 +75,14 @@ if "QYWX_KEY" in os.environ:
     if len(os.environ["QYWX_KEY"]) > 1:
         QYWX_KEY = os.environ["QYWX_KEY"]
         # print("已获取并使用Env环境 QYWX_AM")
-print(SCKEY)  
+print(SCKEY)
 if BARK:
     notify_mode.append('bark')
     # print("BARK 推送打开")
 if BARK_PUSH:
     notify_mode.append('bark')
     # print("BARK 推送打开")
-if SCKEY:  
+if SCKEY:
     notify_mode.append('sc_key')
     # print("Server酱 推送打开")
 if XZKEY:
@@ -99,7 +99,7 @@ if QQ_SKEY and QQ_MODE:
     # print("QQ机器人 推送打开")
 
 if PUSH_PLUS_TOKEN:
-    notify_mode.append('pushplus_bot')
+    notify_mode.append('pushplus_bot')  
     # print("微信推送Plus机器人 推送打开")
 if QYWX_AM:
     notify_mode.append('wecom_app')
