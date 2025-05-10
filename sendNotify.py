@@ -99,7 +99,7 @@ if QQ_SKEY and QQ_MODE:
     # print("QQ机器人 推送打开")
 
 if PUSH_PLUS_TOKEN:
-    notify_mode.append('pushplus_bot')  
+    notify_mode.append('pushplus_bot')
     # print("微信推送Plus机器人 推送打开")
 if QYWX_AM:
     notify_mode.append('wecom_app')
