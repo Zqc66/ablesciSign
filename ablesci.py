@@ -82,5 +82,5 @@ if __name__ == "__main__":
     content += "=========================="
     print(content)
     send("科研通签到", content)
-    
+    print('success')
 
