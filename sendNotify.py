@@ -406,9 +406,11 @@ def send(title, content):
             else:
                 print('未启用 bark')
             continue
-        if i == 'sc_key':      
-            if SCKEY:      
+        if i == 'sc_key':
+            print('1')
+            if SCKEY:
                 serverJ(title=title, content=content)
+                print('2')
             else:
                 print('未启用 Server酱')
             continue
