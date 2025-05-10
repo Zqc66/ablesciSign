@@ -427,7 +427,7 @@ def send(title, content):
                 print('未启用 钉钉机器人')
             continue
         elif i == 'telegram_bot':
-            if TG_BOT_TOKEN and TG_USER_ID:  
+            if TG_BOT_TOKEN and TG_USER_ID:
                 telegram_bot(title=title, content=content)
             else:
                 print('未启用 telegram机器人')
