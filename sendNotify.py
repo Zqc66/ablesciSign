@@ -17,7 +17,7 @@ from urllib3.util import Retry
 from typing import Dict, Any, Optional
 cur_path = os.path.abspath(os.path.dirname(__file__))
 root_path = os.path.split(cur_path)[0]
-sys.path.append(root_path)
+sys.path.append(root_path)  
 
 # 通知服务
 BARK = ''  # bark服务,自行搜索; secrets可填;
@@ -60,7 +60,7 @@ if "DD_BOT_ACCESS_TOKEN" in os.environ and os.environ["DD_BOT_ACCESS_TOKEN"] and
     DD_BOT_SECRET = os.environ["DD_BOT_SECRET"]
 if "QQ_SKEY" in os.environ and os.environ["QQ_SKEY"] and "QQ_MODE" in os.environ and os.environ["QQ_MODE"]:
     QQ_SKEY = os.environ["QQ_SKEY"]
-    QQ_MODE = os.environ["QQ_MODE"]
+    QQ_MODE = os.environ["QQ_MODE"]  
 # 获取pushplus+ PUSH_PLUS_TOKEN
 if "PUSH_PLUS_TOKEN" in os.environ:
     if len(os.environ["PUSH_PLUS_TOKEN"]) > 1:
@@ -69,13 +69,13 @@ if "PUSH_PLUS_TOKEN" in os.environ:
 # 获取企业微信应用推送 QYWX_AM
 if "QYWX_AM" in os.environ:
     if len(os.environ["QYWX_AM"]) > 1:
-        QYWX_AM = os.environ["QYWX_AM"]
+        QYWX_AM = os.environ["QYWX_AM"]  
 
 if "QYWX_KEY" in os.environ:
     if len(os.environ["QYWX_KEY"]) > 1:
         QYWX_KEY = os.environ["QYWX_KEY"]
         # print("已获取并使用Env环境 QYWX_AM")
-print(SCKEY)
+
 if BARK:
     notify_mode.append('bark')
     # print("BARK 推送打开")
@@ -108,16 +108,16 @@ if QYWX_AM:
 if QYWX_KEY:
     notify_mode.append('wecom_key')
     # print("企业微信机器人 推送打开")
-print(notify_mode)
+
 
 def message(str_msg):
     global message_info
     print(str_msg)
-    message_info = "{}\n{}".format(message_info, str_msg)
+    message_info = "{}\n{}".format(message_info, str_msg)  
     sys.stdout.flush()
 
 
-def bark(title, content):
+def bark(title, content):  
     print("\n")
     if BARK:
         try:
@@ -278,7 +278,7 @@ def pushplus_bot(title, content):
         print(e)
 
 
-print("xxxxxxxxxxxx")
+print("xxxxxxxxxxxxxxxxx")    
 
 
 def wecom_key(title, content):
@@ -407,10 +407,8 @@ def send(title, content):
                 print('未启用 bark')
             continue
         if i == 'sc_key':
-            print('1')
             if SCKEY:
                 serverJ(title=title, content=content)
-                print('2')
             else:
                 print('未启用 Server酱')
             continue
