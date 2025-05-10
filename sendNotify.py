@@ -407,7 +407,9 @@ def send(title, content):
                 print('未启用 bark')
             continue
         if i == 'sc_key':
+            print('yes1')  
             if SCKEY:
+                print('yes2')  
                 serverJ(title=title, content=content)
             else:
                 print('未启用 Server酱')
