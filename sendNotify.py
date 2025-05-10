@@ -48,11 +48,11 @@ if "BARK_PUSH" in os.environ and os.environ["BARK_PUSH"]:
 if "SCKEY" in os.environ and os.environ["SCKEY"]:
     SCKEY = os.environ["SCKEY"]
 if "XZKEY" in os.environ and os.environ["XZKEY"]:
-    XZKEY = os.environ["XZKEY"]  
+    XZKEY = os.environ["XZKEY"]
 if "TG_BOT_TOKEN" in os.environ and os.environ["TG_BOT_TOKEN"] and "TG_USER_ID" in os.environ and os.environ["TG_USER_ID"]:
     TG_BOT_TOKEN = os.environ["TG_BOT_TOKEN"]
     TG_USER_ID = os.environ["TG_USER_ID"]
-if "TG_API_HOST" in os.environ and os.environ["TG_API_HOST"]:  
+if "TG_API_HOST" in os.environ and os.environ["TG_API_HOST"]:    
     TG_API_HOST = os.environ["TG_API_HOST"]
 if "DD_BOT_ACCESS_TOKEN" in os.environ and os.environ["DD_BOT_ACCESS_TOKEN"] and "DD_BOT_SECRET" in os.environ and \
         os.environ["DD_BOT_SECRET"]:
