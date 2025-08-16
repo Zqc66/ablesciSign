@@ -381,6 +381,7 @@ def main():
     # 在GitHub Actions环境中输出日志内容
     if IS_GITHUB_ACTIONS:
         print(f"::set-output name=log_content::{full_log}")
+        print(f"log_content={full_log} >> $GITHUB_OUTPUT")
 
 if __name__ == "__main__":
     main()
