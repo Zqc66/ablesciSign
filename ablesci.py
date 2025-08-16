@@ -6,7 +6,7 @@
 """
 AbleSci自动签到脚本 - 多账号版
 创建日期：2025年8月8日
-作者：daitcl
+作者：Zqc66
 """
 
 import os
