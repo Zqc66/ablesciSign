@@ -279,7 +279,6 @@ class AbleSciAuto:
         
         # 添加额外空行
         self.log("")
-        self.log("")
 
     def run(self):
         """执行完整的登录和签到流程"""
